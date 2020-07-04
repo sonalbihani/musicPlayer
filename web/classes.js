@@ -53,6 +53,20 @@ var t7 = new track(7, 'Perfect', 'Shreya Ghoshal', 'Bollywood', 'media/Ankahee.m
 var t8 = new track(8, 'Thunder', 'Shreya Ghoshal', 'Bollywood', 'media/Ankahee.mp3');
 var t9 = new track(9, 'Play Date', 'Shreya Ghoshal', 'Bollywood', 'media/Ankahee.mp3');
 var t10 = new track(10, 'Blinding Lights', 'Shreya Ghoshal', 'Bollywood', 'media/Ankahee.mp3');
+t1.total_rating = 56;
+t1.no_rated = 16;
+t2.total_rating = 10;
+t2.no_rated = 2;
+t3.total_rating = 24;
+t3.no_rated = 8;
+t4.total_rating = 24;
+t4.no_rated = 5;
+t5.total_rating = 5;
+t5.no_rated = 1;
+t6.total_rating = 4;
+t6.no_rated = 1;
+t7.total_rating = 20;
+t7.no_rated = 5;
 songs_library.push(t1);
 songs_library.push(t2);
 songs_library.push(t3);
@@ -124,4 +138,10 @@ function findPlaylist(u, name) {
             return pl_list[i].tracks;
         }
     }
+}
+function playSongbyURL(s) {
+    var myAudio = document.getElementById("audio-player");
+    var myAudioSource = document.getElementById("audio-source");
+    myAudio.src = s;
+    myAudio.play();
 }

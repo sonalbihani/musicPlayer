@@ -1,5 +1,4 @@
 
-
 var container = document.getElementById("navig") as HTMLInputElement;
 container.innerHTML+=`<!--logo and iconic logo start-->
 <div class="logo">
@@ -25,9 +24,9 @@ var current_user="user1";
 let userr = JSON.parse(localStorage.getItem(current_user));
 container = document.getElementById("page-wrapper") as HTMLInputElement;
 container.innerHTML+= `<div class="inner-content text-center" >
-<form name ="form1" action="playlist.html">
-   <h2>Enter name of new Playlist: </h2> 
-    <input type="text" name="plname" id="plname">
+<form  action="song.html">
+   <h2>Enter url of song : </h2> 
+    <input type="text" name="song_url" id="song_url">
     <input type="submit" value="Submit"> 
 </form>
 

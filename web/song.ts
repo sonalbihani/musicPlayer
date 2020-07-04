@@ -1,4 +1,9 @@
 /// <reference path="classes.ts" />
+var query = location.search;
+if(query.length>1){
+    var surl = query.slice(query.indexOf("=")+1);
+    playSongbyURL(surl);
+}
 let userr = JSON.parse(localStorage.getItem(current_user));
 let lib = JSON.parse(localStorage.getItem("song-library"))
 var container = document.getElementById("songs-all") as HTMLInputElement;

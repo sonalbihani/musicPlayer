@@ -17,6 +17,7 @@ for(let i =1; i<=6;i++){
     <img onclick="playSong(`+libb[i-1].id+`)" src="images/v`+i+`.jpg" title="allbum-name">
      <a href=""><i class="glyphicon glyphicon-play-circle"></i></a>
     <a class="sing" href="single.html">`+libb[i-1].name+`</a>
+    <span class = stars>Rating: `+(libb[i-1].total_rating/libb[i-1].no_rated)+`</span>
 </div>`
 }
 container.innerHTML+=`</div>
